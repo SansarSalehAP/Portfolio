@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Contact me</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
@@ -16,15 +16,24 @@
 
 <body>
     <header>
-        <nav>
-            <ul>
-                <h1>Sansar Saleh</h1>
-                <img src="Assets/LOGO.png" alt="Logo">
-                <li><a href="Personalia.html">Personalia</a></li>
-                <li><a href="#">Projecten</a></li>
-                <li><a href="#">Ervaring</a></li>
-                <li><a href="#">Werk met me</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg container-fluid align-items-center">
+            <a href="index.html" class="navbar-brand align-items-center">
+                <img class="me-2" src="Assets/images/LOGO.png" alt="Logo" height="100vw">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end me-5" id="mainNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="Personalia.html">Personalia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Portfolio.html">Projecten</a></li>
+                    <li class="nav-item"><a class="nav-link" href="experience.html">Ervaring</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Werk met me</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
     <main>
