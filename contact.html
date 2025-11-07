@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact me</title>
+    <title>Contacteer me</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
@@ -42,49 +42,71 @@
         </nav>
     </header>
     <main>
-        <h1>CONTACT ME</h1>
+        <h1 class="p-4 text-center">CONTACTEER ME VIA</h1>
+        <div class="row pb-4">
+            <div class="mb-2 container col-12 col-md-3">
+                <section class="p-2 contactblock text-center ">
 
-        <section class="container">
-            <h2>Email</h2>
-            <a href="mailto:sansar.saleh@student.ap.be">sansar.saleh@student.ap.be</a>
-        </section>
-        <section class="container">
-            <h2>Telefoon</h2>
-            <a href="tel:+32479322745">32 (0)479 32 27 45</a>
-        </section>
-        <section class="container ">
-            <h2>LinkedIN</h2>
-            <a href="https://www.linkedin.com/in/sansarsaleh/">https://www.linkedin.com/in/sansarsaleh/</a>
-        </section>
-
-        <section class="container">
-            <div class="embed-map-responsive">
-                <div class="embed-map-container"><iframe class="embed-map-frame" frameborder="0" scrolling="no"
-                        marginheight="0" marginwidth="0"
-                        src="https://maps.google.com/maps?width=600&height=400&hl=en&q=luchtbal&t=&z=13&ie=UTF8&iwloc=B&output=embed"></iframe><a
-                        href="https://sprunkiretake.net"
-                        style="font-size:2px!important;color:gray!important;position:absolute;bottom:0;left:0;z-index:1;max-height:1px;overflow:hidden">sprunki
-                        retake</a></div>
+                    <a href="mailto:sansar.saleh@student.ap.be">
+                        <h2>EMAIL</h2>sansar.saleh@student.ap.be
+                    </a>
+                </section>
             </div>
-        </section>
+            <div class="mb-2 container col-12 col-md-3">
+                <section class="p-2 contactblock text-center ">
 
-        <section class="container">
-            <form>
-                <label for="naam" class="form-label">Naam *</label>
-                <input type="text" class="form-control" id="naam" placeholder="Jouw naam" required>
+                    <a href="tel:+32479322745">
+                        <h2>TELEFOON</h2>32 (0)479 32 27 45
+                    </a>
+                </section>
+            </div>
+            <div class="mb-2 container col-12 col-md-3">
+                <section class="p-2 contactblock text-center">
 
-                <label for="Email" class="form-label">E-mail *</label>
-                <input type="Email" class="form-control" name="Email" id="Email" placeholder="Jouw E-mail" required>
+                    <a href="https://www.linkedin.com/in/sansarsaleh/">
+                        <h2>linkedin</h2>https://www.linkedin.com/in/sansarsaleh/
+                    </a>
+                </section>
+            </div>
+        </div>
+        <div class="row">
 
-                <label for="subject" class="form-label fw-semibold">Onderwerp *</label>
-                <input type="text" class="form-control" id="subject" placeholder="Waarover gaat je bericht?" required>
 
-                <label for="message" class="form-label fw-semibold">Bericht *</label>
-                <textarea class="form-control" id="message" rows="6" placeholder="Typ je bericht hier..."
-                    required></textarea>
-                <button type="submit" class="btn px-4 py-2 fw-semibold">Verzenden</button>
-            </form>
-        </section>
+            <section class="p-4 container form col-12 col-md-6">
+                <form>
+                    <h2>STUUR ME EEN E-MAIL</h2>
+                    <div class="pb-4">
+                        <label for="naam" class="form-label">Naam <span class="required">*</span></label>
+                        <input type="text" class="form-control" id="naam" placeholder="Jouw naam" required>
+
+                        <label for="Email" class="form-label">E-mail <span class="required">*</span></label>
+                        <input type="Email" class="form-control" name="Email" id="Email" placeholder="Jouw E-mail"
+                            required>
+
+                        <label for="subject" class="form-label fw-semibold">Onderwerp <span
+                                class="required">*</span></label>
+                        <input type="text" class="form-control" id="subject" placeholder="Waarover gaat je bericht?"
+                            required>
+
+                        <label for="message" class="form-label fw-semibold">Bericht <span
+                                class="required">*</span></label>
+                        <textarea class="form-control" id="message" rows="6" placeholder="Typ je bericht hier..."
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="submit btn px-4 py-2 fw-semibold">Verzenden</button>
+                </form>
+            </section>
+            <section class="container p-4 col-12 col-md-6">
+                <div class="embed-map-responsive">
+                    <div class="embed-map-container"><iframe class="embed-map-frame" frameborder="0" scrolling="no"
+                            marginheight="0" marginwidth="0"
+                            src="https://maps.google.com/maps?width=600&height=400&hl=en&q=luchtbal&t=&z=13&ie=UTF8&iwloc=B&output=embed"></iframe><a
+                            href="https://sprunkiretake.net"
+                            style="font-size:2px!important;color:gray!important;position:absolute;bottom:0;left:0;z-index:1;max-height:1px;overflow:hidden">sprunki
+                            retake</a></div>
+                </div>
+            </section>
+        </div>
 
     </main>
     <aside></aside>
