@@ -1,25 +1,95 @@
+/* */
+:root {
+  --main-color: #736372;
+  --blue-color: #247BA0;
+  --green-color: #02C39A;
+  --title-font: 'MuseoModerno', sans-serif;
+}
+
+/* Font import */
+@font-face {
+  font-family: 'MuseoModerno';
+  src: url('../Assets/fonts/museomoderno/MuseoModerno-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+
+/* __________global elements__________*/
+body {
+  font-family: var(--title-font);
+}
+
+/* Buttons (global Bootstrap overrides) */
+.btn {
+  border: var(--green-color) solid 1px;
+}
+.btn:hover {
+  background-color: var(--green-color);
+  color: var(--main-color);
+  transition: background-color 0.5s ease-in;
+}
+
+
+/* __________navbar__________ */
+.navbar {
+  font-family: var(--title-font);
+}
+
+.navbar-nav {
+  gap: 1rem;
+}
+
+.nav-link {
+  border-radius: 0.5rem;
+}
+
+.nav-link:hover {
+  color: var(--main-color);
+  background-color: var(--green-color);
+  transition: background-color 0.5s ease;
+}
+
+.nav-item:hover {
+  color: black;
+}
+
+
+/* __________index specific classes__________ */
+.slogan {
+  font-family: var(--title-font);
+}
+
+.portrait {
+  max-width: 80%;
+  height: auto;
+  border-radius: 0.75rem;
+}
+
+
+/* __________map iframe__________ */
 .embed-map-responsive {
-                        position: relative;
-                        text-align: right;
-                        width: 100%;
-                        height: 0;
-                        padding-bottom: 66.66666666666666%;
-                    }
+  position: relative;
+  text-align: right;
+  width: 100%;
+  height: 0;
+  padding-bottom: 66.6666666667%;
+}
 
-                    .embed-map-container {
-                        overflow: hidden;
-                        background: none !important;
-                        width: 100%;
-                        height: 100%;
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                    }
+.embed-map-container {
+  overflow: hidden;
+  background: none !important;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 
-                    .embed-map-frame {
-                        width: 100% !important;
-                        height: 100% !important;
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                    }
+.embed-map-frame {
+  width: 100% !important;
+  height: 100% !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
