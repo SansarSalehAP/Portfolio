@@ -4,6 +4,7 @@
   --blue-color: #247BA0;
   --green-color: #02C39A;
   --title-font: 'MuseoModerno', sans-serif;
+  --main-font: 'Poppins',sans-serif;
 }
 
 /* Font import */
@@ -13,16 +14,31 @@
   font-weight: 100 900;
   font-style: normal;
 }
+@font-face {
+    font-family: 'Poppins';
+    src: url('../Assets/fonts/poppins/Poppins-Regular.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+
 
 
 /* __________global elements__________*/
 body {
-  font-family: var(--title-font);
+    font-family: var(--main-font);
+    
+}
+h1{
+    font-family: var(--title-font);
+}
+h2{
+    font-family: var(--title-font);
 }
 
 /* Buttons (global Bootstrap overrides) */
 .btn {
-  border: var(--green-color) solid 1px;
+  border: var(--green-color) solid 0.125rem;
 }
 .btn:hover {
   background-color: var(--green-color);
@@ -53,6 +69,13 @@ body {
 .nav-item:hover {
   color: black;
 }
+.logo{
+    border-radius: 0.75rem;
+}
+.logo:hover{
+    outline: var(--green-color) 0.250rem solid;
+    transition: outline 0.1s ease-in;
+}
 
 
 /* __________index specific classes__________ */
@@ -61,9 +84,14 @@ body {
 }
 
 .portrait {
-  max-width: 80%;
+  max-width: 70%;
   height: auto;
   border-radius: 0.75rem;
+}
+.portrait:hover{
+    outline: var(--green-color) solid 0.500rem;
+    outline-offset: var(--green-color) solid 0.500rem;
+    transition: outline-offset 0.1s ease, outline 0.1s ease
 }
 
 

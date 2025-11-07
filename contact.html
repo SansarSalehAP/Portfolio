@@ -16,10 +16,12 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg container-fluid align-items-center">
-            <a href="index.html" class="navbar-brand align-items-center">
-                <img class="me-2" src="Assets/images/LOGO.png" alt="Logo" height="100vw">
+        <nav class="navbar navbar-expand-md container-fluid align-items-center">
+            <div class="navbar-brand align-items-center ps-3">
+            <a href="index.html" class="">
+                <img class="me-2 logo" src="Assets/images/LOGO.png" alt="Logo" height="100vw">
             </a>
+        </div>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
                 aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,22 +39,22 @@
         </nav>
     </header>
     <main>
-        <h1>contact me</h1>
+        <h1>CONTACT ME</h1>
 
-        <section>
+        <section class="container">
             <h2>Email</h2>
-            <p><a href="mailto:sansar.saleh@student.ap.be">sansar.saleh@student.ap.be</a></p>
-        </section>
-        <section>
+            <a href="mailto:sansar.saleh@student.ap.be">sansar.saleh@student.ap.be</a>
+        </section >
+        <section class="container">
             <h2>Telefoon</h2>
-            <p><a href="tel:+32479322745">32 (0)479 32 27 45</a></p>
+            <a href="tel:+32479322745">32 (0)479 32 27 45</a>
         </section>
-        <section>
+        <section class="container ">
             <h2>LinkedIN</h2>
-            <p><a href="https://www.linkedin.com/in/sansarsaleh/">sansar.saleh@student.ap.be</a></p>
+            <a href="https://www.linkedin.com/in/sansarsaleh/">https://www.linkedin.com/in/sansarsaleh/</a>
         </section>
 
-        <section>
+        <section class="container">
             <div class="embed-map-responsive">
                 <div class="embed-map-container"><iframe class="embed-map-frame" frameborder="0" scrolling="no"
                         marginheight="0" marginwidth="0"
@@ -63,28 +65,28 @@
             </div>
         </section>
 
-        <section>
+        <section class="container">
             <form>
-                <label for="naam" class="form-label">Naam</label>
+                <label for="naam" class="form-label">Naam *</label>
                 <input type="text" class="form-control" id="naam" placeholder="Jouw naam" required>
 
-                <label for="Email" class="form-label">E-mail</label>
+                <label for="Email" class="form-label">E-mail *</label>
                 <input type="Email" class="form-control" name="Email" id="Email" placeholder="Jouw E-mail" required>
 
-                <label for="subject" class="form-label fw-semibold">Onderwerp</label>
+                <label for="subject" class="form-label fw-semibold">Onderwerp *</label>
                 <input type="text" class="form-control" id="subject" placeholder="Waarover gaat je bericht?" required>
 
-                <label for="message" class="form-label fw-semibold">Bericht</label>
+                <label for="message" class="form-label fw-semibold">Bericht *</label>
                 <textarea class="form-control" id="message" rows="6" placeholder="Typ je bericht hier..."
                     required></textarea>
-                <button type="submit" class="btn btn-primary px-4 py-2 fw-semibold">Verzenden</button>
+                <button type="submit" class="btn px-4 py-2 fw-semibold">Verzenden</button>
             </form>
         </section>
 
     </main>
     <aside></aside>
     <footer>
-        <p>© 2025 Sansar Saleh — Alle rechten voorbehouden.</p>
+        <p class="mt-4 text-center">© 2025 Sansar Saleh — Alle rechten voorbehouden.</p>
     </footer>
 </body>
 
