@@ -58,6 +58,14 @@ span {
     transition: background-color 0.5s ease-in;
 }
 
+footer{
+    border-top: solid 1px black;
+}
+footer img{
+    height: 80px;
+    width: auto;
+}
+
 
 /* __________navbar__________ */
 .navbar {
