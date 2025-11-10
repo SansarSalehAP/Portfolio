@@ -117,7 +117,7 @@ footer img {
 }
 
 .portrait {
-    max-width: 70%;
+    max-width: 65%;
     height: auto;
     border-radius: 0.75rem;
     -webkit-box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.64);
@@ -129,12 +129,13 @@ footer img {
     outline-offset: var(--green-color) solid 0.500rem;
     transition: outline-offset 0.1s ease, outline 0.1s ease
 }
+
 /* __________Project page specific classes__________*/
 
 .project-image:hover {
     outline: var(--green-color) solid 0.500rem;
     outline-offset: var(--green-color) solid 0.500rem;
-    transition: outline-offset 0.1s ease, outline 0.1s ease
+    transition: outline-offset 0.2s ease, outline 0.2s ease
 }
 
 .project-image {
@@ -146,7 +147,7 @@ footer img {
 
 }
 /* __________Experience specific classes__________*/
-.ervaringTitel{
+.hoofdTitel{
     border: solid 1px black;
     border-radius: 0.75rem;
 }
