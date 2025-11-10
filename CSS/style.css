@@ -50,18 +50,21 @@ span {
 /* Buttons (global Bootstrap overrides) */
 .btn {
     border: black solid 0.075rem;
+
 }
 
 .btn:hover {
+    border: var(--green-color) solid 1px;
     background-color: var(--green-color);
     color: var(--main-color);
-    transition: background-color 0.5s ease-in;
+    transition: background-color 0.5s ease-in, border 0.5s ease;
 }
 
-footer{
+footer {
     border-top: solid 1px black;
 }
-footer img{
+
+footer img {
     height: 80px;
     width: auto;
 }
@@ -94,7 +97,7 @@ footer img{
 
 .logo {
     border-radius: 0.75rem;
-    height: 4rem;
+    height: 2rem;
 }
 
 .logo:hover {
@@ -117,6 +120,8 @@ footer img{
     max-width: 70%;
     height: auto;
     border-radius: 0.75rem;
+    -webkit-box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.64);
+    box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.64);
 }
 
 .portrait:hover {
@@ -124,6 +129,7 @@ footer img{
     outline-offset: var(--green-color) solid 0.500rem;
     transition: outline-offset 0.1s ease, outline 0.1s ease
 }
+/* __________Project page specific classes__________*/
 
 .project-image:hover {
     outline: var(--green-color) solid 0.500rem;
@@ -137,7 +143,14 @@ footer img{
     aspect-ratio: 16 / 9;
     object-fit: cover;
     border-radius: 0.5rem;
+
 }
+/* __________Experience specific classes__________*/
+.ervaringTitel{
+    border: solid 1px black;
+    border-radius: 0.75rem;
+}
+
 
 /* __________Contact specific classes __________*/
 .contactblock {
