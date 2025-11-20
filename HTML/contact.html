@@ -73,25 +73,36 @@
 
 
             <section class="p-4 container form col-12 col-md-6">
-                <form>
+                <form name="contact" method="post" data-netlify="True" data-netlify-recaptcha="true">
                     <h2>STUUR EEN E-MAIL</h2>
                     <div class="pb-4">
-                        <label for="naam" class="form-label">Naam <span class="required">*</span></label>
-                        <input type="text" class="form-control" id="naam" placeholder="Jouw naam" required>
+                        <div class="form-group">
+                            <label for="naam" class="form-label">Naam <span class="required">*</span></label>
+                            <input type="text" class="form-control" id="naam" placeholder="Jouw naam" required>
+                        </div>
+                        <div class="form-group">
 
-                        <label for="Email" class="form-label">E-mail <span class="required">*</span></label>
-                        <input type="Email" class="form-control" name="Email" id="Email" placeholder="Jouw E-mail"
-                            required>
+                            <label for="Email" class="form-label">E-mail <span class="required">*</span></label>
+                            <input type="Email" class="form-control" name="Email" id="Email" placeholder="Jouw E-mail"
+                                required>
+                        </div>
+                        <div class="form-group">
 
-                        <label for="subject" class="form-label fw-semibold">Onderwerp <span
-                                class="required">*</span></label>
-                        <input type="text" class="form-control" id="subject" placeholder="Waarover gaat je bericht?"
-                            required>
+                            <label for="subject" class="form-label fw-semibold">Onderwerp <span
+                                    class="required">*</span></label>
+                            <input type="text" class="form-control" id="subject" placeholder="Waarover gaat je bericht?"
+                                required>
+                        </div>
+                        <div class="form-group">
 
-                        <label for="message" class="form-label fw-semibold">Bericht <span
-                                class="required">*</span></label>
-                        <textarea class="form-control" id="message" rows="6" placeholder="Typ je bericht hier..."
-                            required></textarea>
+                            <label for="message" class="form-label fw-semibold">Bericht <span
+                                    class="required">*</span></label>
+                            <textarea class="form-control" id="message" rows="6" placeholder="Typ je bericht hier..."
+                                required></textarea>
+                            <div class="form-group">
+                                <div data-netlify-recaptcha="true"></div>
+                            </div>
+                        </div>
                     </div>
                     <button type="submit" class="submit shadow-none btn px-4 py-2 fw-semibold">Verzenden</button>
                 </form>
