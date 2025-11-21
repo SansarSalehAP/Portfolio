@@ -42,9 +42,7 @@ span {
     transition: background-color 0.3s ease-in, border 0.3s ease;
 }
 
-footer {
-    border-top: solid 1px black;
-}
+
 
 footer img {
     height: 80px;
