@@ -46,10 +46,20 @@
     <main class="p-3 pt-5 pb-5">
         <article>
 
+
             <section>
                 <h1>TrueNAS Serverlab</h1>
                 <p>Een persoonlijk serverproject waarin ik een testomgeving bouwde om opslagbeheer, netwerkconfiguratie
                     en troubleshooting te oefenen.</p>
+                <figure class="container-fluid p-0 mb-5">
+                    <img src="../../Assets/images/Project5/truenas-banner.jpg"
+                        alt="TrueNAS Dashboard voorbeeldinterface" class="img-fluid w-100">
+
+                    <figcaption class="text-center text-muted mt-2">
+                        Standaard dashboard van de TrueNAS-interface — illustratief voorbeeld van de omgeving waarmee ik
+                        gewerkt heb.
+                    </figcaption>
+                </figure>
             </section>
 
             <section>
@@ -63,6 +73,93 @@
                     netwerkshares.
                     Ook experimenteerde ik met SMB- en NFS-protocollen om veilige en efficiënte toegang te realiseren.
                 </p>
+                <div class="row">
+                    <section class="mb-5 col-12 col-md-9">
+                        <h2>Technische configuratie</h2>
+
+                        <table class="table table-bordered table-striped mt-3">
+                            <thead>
+                                <tr>
+                                    <th>Onderdeel</th>
+                                    <th>Configuratie</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>RAID-type</td>
+                                    <td>RAID0 (testomgeving, performantie boven redundantie)</td>
+                                </tr>
+                                <tr>
+                                    <td>Gebruikers</td>
+                                    <td>5 users, elk met een eigen dataset</td>
+                                </tr>
+                                <tr>
+                                    <td>Toegangsrechten</td>
+                                    <td>Private toegang per user — enkel de eigenaar heeft lees/schrijfrechten</td>
+                                </tr>
+                                <tr>
+                                    <td>Admin toegang</td>
+                                    <td>Administrator heeft uitzonderlijk toegang tot alle datasets/shares</td>
+                                </tr>
+                                <tr>
+                                    <td>Bestandsdiensten</td>
+                                    <td>SMB (Windows) shares voor alle user-datasets</td>
+                                </tr>
+                                <tr>
+                                    <td>Datasets</td>
+                                    <td>Eén dataset per user + private ACL per dataset</td>
+                                </tr>
+                                <tr>
+                                    <td>Snapshots</td>
+                                    <td>Geen snapshots geconfigureerd (niet vereist binnen testproject)</td>
+                                </tr>
+                                <tr>
+                                    <td>Hardware</td>
+                                    <td>Virtuele installatie op VMware Workstation</td>
+                                </tr>
+                                <tr>
+                                    <td>Netwerk</td>
+                                    <td>Virtuele NIC in bridged mode voor toegang vanaf LAN clients</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+
+                    <aside class="col-12 col-md-3 ps-3">
+
+                        <section class="mb-4">
+                            <h2>Projectinfo</h2>
+                            <ul class="list-unstyled">
+                                <li><strong>Doel:</strong> Testomgeving voor opslagbeheer</li>
+                                <li><strong>Type project:</strong> Server & Storage</li>
+                                <li><strong>Platform:</strong> TrueNAS Core</li>
+                                <li><strong>Opstelling:</strong> Virtuele omgeving</li>
+                            </ul>
+                        </section>
+
+                        <section class="mb-4">
+                            <h2>Focuspunten</h2>
+                            <ul class="list-unstyled">
+                                <li>NAS-configuratie</li>
+                                <li>Gebruikersbeheer</li>
+                                <li>RAID-keuzes</li>
+                                <li>ACL & toegangsrechten</li>
+                                <li>SMB-shares</li>
+                            </ul>
+                        </section>
+
+                        <section>
+                            <h2>Belangrijkste inzichten</h2>
+                            <ul class="list-unstyled">
+                                <li>Hoe datasets en ACL’s samenwerken</li>
+                                <li>Verschil tussen RAID0 en veilige RAID-types</li>
+                                <li>Praktisch gebruik van TrueNAS WebUI</li>
+                                <li>Best practices voor bestandsdeling</li>
+                            </ul>
+                        </section>
+
+                    </aside>
+
             </section>
 
             <section>
@@ -90,17 +187,6 @@
 
         </article>
     </main>
-
-    <aside class="pt-5 ps-2 pe-2">
-        <a class="btn" href="../Portfolio.html">Terug naar projecten</a>
-        <p>
-            Wil je meer weten of samenwerken aan een project?
-            Neem gerust contact met me op via de
-            <a class="btn" href="../contact.html">contactpagina</a> of via mijn LinkedIn-profiel:
-            <a class="btn" href="https://www.linkedin.com/in/sansarsaleh/" target="_blank">
-                linkedin.com/in/sansarsaleh</a>
-        </p>
-    </aside>
     <footer class="text-center mt-5 py-3 border">
         <section>
             <h2 class="text-center ">Contact</h2>
