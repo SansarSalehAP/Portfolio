@@ -8,32 +8,17 @@
 }
 
 /* __________global elements__________*/
-body {
-    font-family: var(--main-font);
-
-}
-
-h1 {
-    font-family: var(--title-font);
-}
-
-h2 {
-    font-family: var(--title-font);
-}
-
-h3 {
-    font-family: var(--title-font);
-}
 
 span {
     color: red;
 }
 
-/* Buttons (global Bootstrap overrides) */
+/* Buttons  */
 .btn {
     border: black solid 0.075rem;
 
 }
+
 
 .btn:hover {
     border: var(--green-color) solid 1px;
@@ -41,9 +26,14 @@ span {
     color: var(--main-color);
     transition: background-color 0.3s ease-in, border 0.3s ease;
 }
-
-
-
+.top-mobile {
+    top: 30%;   /* Titel lager op mobile zodat hij midden valt */
+}
+@media (min-width: 768px) {
+    .top-md-desktop {
+        top: 50%;   /* Perfect center op grotere schermen */
+    }
+}
 footer img {
     height: 80px;
     width: auto;
@@ -167,6 +157,15 @@ footer img {
 .form-control:focus {
     border-color: var(--green-color);
     box-shadow: 0 0 0 0.1rem var(--green-color);
+}
+
+/* __________projects specific classes __________*/
+.bannerTitle{
+    color: var();
+}
+.bannerPhoto{
+    object-fit: cover;
+    max-height: 350px;
 }
 
 
